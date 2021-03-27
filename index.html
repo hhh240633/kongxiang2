@@ -13,7 +13,7 @@
 		<!--背景音乐-->
             <a id="head"></a>
 			<p style="color: burlywood;font-size: 20px">背景<br />音乐：
-				<audio controls="controls" autoplay="autoplay" loop="true">
+				<audio id="music" controls="controls" autoplay="autoplay" loop="true">
   					<source src="https://vip-down.kkyhq.cn:88/%E9%98%BFYueYue+-+%E4%BA%91%E4%B8%8E%E6%B5%B7.mp3?p=20210327/075777cb7aa165968334d00ff77b09f3&t=1616813036&f=%E9%98%BFYueYue+-+%E4%BA%91%E4%B8%8E%E6%B5%B7.mp3&k=e828d2f440174cb33ff6b749b45113b9f122d37e" type="audio/mp3">
 				</audio>
 				<script>
@@ -322,4 +322,9 @@
 </p>
 </div>
 </body>
+    	<!-- 设置背景音乐音量为0.3，即正常音量的30% -->
+	<script type="text/javascript">
+		myVid=document.getElementById("music");
+		myVid.volume=0.3;
+	</script>
 </html>
