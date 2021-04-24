@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - 表单(续)</title>
+</head>
+
+<body>
+<div align="center">
+  <article>
+    <header>
+      <h2 style="font:italic;color: crimson">HTML5 - 表单(续) </h2>
+    </header>
+  </article>
+  <aside>
+    <nav>
+      <div align="center" style="font:italic;color:cyan">
+        <h2 style="color: blueviolet">input属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th style="width:20%;">属性</th>
+            <th style="width:20%;">值</th>
+            <th style="width:60%;">描述</th>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 accept 属性">accept</p></td>
+            <td><i>mime_type</i></td>
+            <td>规定通过文件上传来提交的文件的类型。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 align 属性">align</p></td>
+            <td><ul>
+                <li>left</li>
+                <li>right</li>
+                <li>top</li>
+                <li>middle</li>
+                <li>bottom</li>
+              </ul></td>
+            <td><span class="deprecated">不赞成使用。</span>规定图像输入的对齐方式。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 alt 属性">alt</p></td>
+            <td>text</td>
+            <td>定义图像输入的替代文本。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; autocomplete 属性">autocomplete</p></td>
+            <td><ul>
+                <li>on</li>
+                <li>off</li>
+              </ul></td>
+            <td>规定是否使用输入字段的自动完成功能。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; autofocus 属性">autofocus</p></td>
+            <td>autofocus</td>
+            <td><p>规定输入字段在页面加载时是否获得焦点。</p>
+              <p>（不适用于 type=&quot;hidden&quot;）</p></td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 checked 属性">checked</p></td>
+            <td>checked</td>
+            <td>规定此 input 元素首次加载时应当被选中。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 disabled 属性">disabled</p></td>
+            <td>disabled</td>
+            <td>当 input 元素加载时禁用此元素。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; form 属性">form</p></td>
+            <td><i>formname</i></td>
+            <td>规定输入字段所属的一个或多个表单。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; formaction 属性">formaction</p></td>
+            <td><i>URL</i></td>
+            <td><p>覆盖表单的 action 属性。</p>
+              <p>（适用于 type=&quot;submit&quot; 和 type=&quot;image&quot;）</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; formenctype 属性">formenctype</p></td>
+            <td>见注释</td>
+            <td><p>覆盖表单的 enctype 属性。</p>
+              <p>（适用于 type=&quot;submit&quot; 和 type=&quot;image&quot;）</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; formmethod 属性">formmethod</p></td>
+            <td><ul>
+                <li>get</li>
+                <li>post</li>
+              </ul></td>
+            <td><p>覆盖表单的 method 属性。</p>
+              <p>（适用于 type=&quot;submit&quot; 和 type=&quot;image&quot;）</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; formnovalidate 属性">formnovalidate</p></td>
+            <td>formnovalidate</td>
+            <td><p>覆盖表单的 novalidate 属性。</p>
+              <p>如果使用该属性，则提交表单时不进行验证。</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; formtarget 属性">formtarget</p></td>
+            <td><ul>
+                <li>_blank</li>
+                <li>_self</li>
+                <li>_parent</li>
+                <li>_top</li>
+                <li><i>framename</i></li>
+              </ul></td>
+            <td><p>覆盖表单的 target 属性。</p>
+              <p>（适用于 type=&quot;submit&quot; 和 type=&quot;image&quot;）</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; height 属性">height</p></td>
+            <td><ul>
+                <li><i>pixels</i></li>
+                <li><i>%</i></li>
+              </ul></td>
+            <td>定义 input 字段的高度。（适用于 type=&quot;image&quot;）</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; list 属性">list</p></td>
+            <td><i>datalist-id</i></td>
+            <td>引用包含输入字段的预定义选项的 datalist 。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; max 属性">max</p></td>
+            <td><ul>
+                <li><i>number</i></li>
+                <li><i>date</i></li>
+              </ul></td>
+            <td><p>规定输入字段的最大值。</p>
+              <p>请与 &quot;min&quot; 属性配合使用，来创建合法值的范围。</p></td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 maxlength 属性">maxlength</p></td>
+            <td>number</td>
+            <td>规定输入字段中的字符的最大长度。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; min 属性">min</p></td>
+            <td><ul>
+                <li><i>number</i></li>
+                <li><i>date</i></li>
+              </ul></td>
+            <td><p>规定输入字段的最小值。</p>
+              <p>请与 &quot;max&quot; 属性配合使用，来创建合法值的范围。</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; multiple 属性">multiple</p></td>
+            <td>multiple</td>
+            <td>如果使用该属性，则允许一个以上的值。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 name 属性">name</p></td>
+            <td>field_name</td>
+            <td>定义 input 元素的名称。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; pattern 属性">pattern</p></td>
+            <td><i>regexp_pattern</i></td>
+            <td><p>规定输入字段的值的模式或格式。</p>
+              <p>例如 pattern=&quot;[0-9]&quot; 表示输入值必须是 0 与 9 之间的数字。</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; placeholder 属性">placeholder</p></td>
+            <td><i>text</i></td>
+            <td>规定帮助用户填写输入字段的提示。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 readonly 属性">readonly</p></td>
+            <td>readonly</td>
+            <td>规定输入字段为只读。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; required 属性">required</p></td>
+            <td>required</td>
+            <td>指示输入字段的值是必需的。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 size 属性">size</p></td>
+            <td>number_of_char</td>
+            <td>定义输入字段的宽度。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 src 属性">src</p></td>
+            <td>URL</td>
+            <td>定义以提交按钮形式显示的图像的 URL。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; step 属性">step</p></td>
+            <td><i>number</i></td>
+            <td>规定输入字的的合法数字间隔。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 type 属性">type</p></td>
+            <td><ul>
+                <li>button</li>
+                <li>checkbox</li>
+                <li>file</li>
+                <li>hidden</li>
+                <li>image</li>
+                <li>password</li>
+                <li>radio</li>
+                <li>reset</li>
+                <li>submit</li>
+                <li>text</li>
+              </ul></td>
+            <td>规定 input 元素的类型。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;input&gt; 标签的 value 属性">value</p></td>
+            <td><i>value</i></td>
+            <td>规定 input 元素的值。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;input&gt; width 属性">width</p></td>
+            <td><ul>
+                <li><i>pixels</i></li>
+                <li><i>%</i></li>
+              </ul></td>
+            <td>定义 input 字段的宽度。（适用于 type=&quot;image&quot;）</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">textarea属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th style="width:25%;">属性</th>
+            <th style="width:25%;">值</th>
+            <th style="width:50%;">描述</th>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;textarea&gt; 标签的 autofocus 属性">autofocus</p></td>
+            <td>autofocus</td>
+            <td>规定在页面加载后文本区域自动获得焦点。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;textarea&gt; 标签的 cols 属性">cols</p></td>
+            <td><i>number</i></td>
+            <td>规定文本区内的可见宽度。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;textarea&gt; 标签的 disabled 属性">disabled</p></td>
+            <td>disabled</td>
+            <td>规定禁用该文本区。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;textarea&gt; 标签的 form 属性">form</p></td>
+            <td><i>form_id</i></td>
+            <td>规定文本区域所属的一个或多个表单。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;textarea&gt; 标签的 maxlength 属性">maxlength</p></td>
+            <td><i>number</i></td>
+            <td>规定文本区域的最大字符数。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;textarea&gt; 标签的 name 属性">name</p></td>
+            <td><i>name_of_textarea</i></td>
+            <td>规定文本区的名称。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;textarea&gt; 标签的 placeholder 属性">placeholder</p></td>
+            <td><i>text</i></td>
+            <td>规定描述文本区域预期值的简短提示。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;textarea&gt; 标签的 readonly 属性">readonly</p></td>
+            <td>readonly</td>
+            <td>规定文本区为只读。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;textarea&gt; 标签的 required 属性">required</p></td>
+            <td>required</td>
+            <td>规定文本区域是必填的。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;textarea&gt; 标签的 rows 属性">rows</p></td>
+            <td><i>number</i></td>
+            <td>规定文本区内的可见行数。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;textarea&gt; 标签的 wrap 属性">wrap</p></td>
+            <td><ul>
+                <li>hard</li>
+                <li>soft</li>
+              </ul></td>
+            <td>规定当在表单中提交时，文本区域中的文本如何换行。。</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">button属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th>属性</th>
+            <th>值</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;button&gt; autofocus 属性">autofocus</p></td>
+            <td>autofocus</td>
+            <td>规定当页面加载时按钮应当自动地获得焦点。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML5 &lt;button&gt; disabled 属性">disabled</p></td>
+            <td>disabled</td>
+            <td>规定应该禁用该按钮。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;button&gt; form 属性">form</p></td>
+            <td><i>form_name</i></td>
+            <td>规定按钮属于一个或多个表单。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;button&gt; formaction 属性">formaction</p></td>
+            <td><i>url</i></td>
+            <td><p>覆盖 form 元素的 action 属性。</p>
+              <p class="note"><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;button&gt; formenctype 属性">formenctype</p></td>
+            <td>见注释</td>
+            <td><p>覆盖 form 元素的 enctype 属性。</p>
+              <p class="note"><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;button&gt; formmethod 属性">formmethod</p></td>
+            <td><ul>
+                <li>get</li>
+                <li>post</li>
+              </ul></td>
+            <td><p>覆盖 form 元素的 method 属性。</p>
+              <p class="note"><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;button&gt; formnovalidate 属性">formnovalidate</p></td>
+            <td>formnovalidate</td>
+            <td><p>覆盖 form 元素的 novalidate 属性。</p>
+              <p class="note"><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p></td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;button&gt; formtarget 属性">formtarget</p></td>
+            <td><ul>
+                <li>_blank</li>
+                <li>_self</li>
+                <li>_parent</li>
+                <li>_top</li>
+                <li><i>framename</i></li>
+              </ul></td>
+            <td><p>覆盖 form 元素的 target 属性。</p>
+              <p class="note"><span>注释：</span>该属性与 type=&quot;submit&quot; 配合使用。</p></td>
+          </tr>
+          <tr>
+            <td><p title="HTML5 &lt;button&gt; name 属性">name</p></td>
+            <td><i>button_name</i></td>
+            <td>规定按钮的名称。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML5 &lt;button&gt; type 属性">type</p></td>
+            <td><ul>
+                <li>button</li>
+                <li>reset</li>
+                <li>submit</li>
+              </ul></td>
+            <td>规定按钮的类型。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML5 &lt;button&gt; value 属性">value</p></td>
+            <td><i>text</i></td>
+            <td>规定按钮的初始值。可由脚本进行修改。</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">select属性</h2>
+        <table class="browser-support" border="1">
+          <tr>
+            <th class="bsTh">元素</th>
+            <th class="bsChrome">Chrome</th>
+            <th class="bsIE">IE</th>
+            <th class="bsFirefox">Firefox</th>
+            <th class="bsSafari">Safari</th>
+            <th class="bsOpera">Opera</th>
+          </tr>
+          <tr>
+            <td>&lt;select&gt;</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <table class="dataintable" border="1">
+          <tr>
+            <th style="width:20%;">属性</th>
+            <th style="width:20%;">值</th>
+            <th style="width:60%;">描述</th>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;select&gt; 标签的 autofocus 属性">autofocus</p></td>
+            <td>autofocus</td>
+            <td>规定在页面加载后文本区域自动获得焦点。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;select&gt; 标签的 disabled 属性">disabled</p></td>
+            <td>disabled</td>
+            <td>规定禁用该下拉列表。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;select&gt; 标签的 form 属性">form</p></td>
+            <td><i>form_id</i></td>
+            <td>规定文本区域所属的一个或多个表单。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;select&gt; 标签的 multiple 属性">multiple</p></td>
+            <td>multiple</td>
+            <td>规定可选择多个选项。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;select&gt; 标签的 name 属性">name</p></td>
+            <td><i>name</i></td>
+            <td>规定下拉列表的名称。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;select&gt; 标签的 required 属性">required</p></td>
+            <td>required</td>
+            <td>规定文本区域是必填的。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;select&gt; 标签的 size 属性">size</p></td>
+            <td><i>number</i></td>
+            <td>规定下拉列表中可见选项的数目。</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">optgroup属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th style="width:20%;">属性</th>
+            <th style="width:20%;">值</th>
+            <th style="width:60%;">描述</th>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;optgroup&gt; label 属性">label</p></td>
+            <td><i>text</i></td>
+            <td>为选项组规定描述。</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">option属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th style="width:20%;">属性</th>
+            <th style="width:20%;">值</th>
+            <th style="width:60%;">描述</th>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;option&gt; 标签的 disabled 属性">disabled</p></td>
+            <td>disabled</td>
+            <td>规定此选项应在首次加载时被禁用。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;option&gt; 标签的 label 属性">label</p></td>
+            <td><i>text</i></td>
+            <td>定义当使用 &lt;optgroup&gt; 时所使用的标注。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;option&gt; 标签的 selected 属性">selected</p></td>
+            <td>selected</td>
+            <td>规定选项（在首次显示在列表中时）表现为选中状态。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML &lt;option&gt; 标签的 value 属性">value</p></td>
+            <td><i>text</i></td>
+            <td>定义送往服务器的选项值。</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">label属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th>属性</th>
+            <th>值</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td><p title="HTML5 &lt;label&gt; for 属性">for</p></td>
+            <td><i>id</i></td>
+            <td>规定 label 绑定到哪个表单元素。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML5 &lt;label&gt; form 属性">form</p></td>
+            <td><i>formid</i></td>
+            <td>规定 label 字段所属的一个或多个表单。</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">fieldset属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th>属性</th>
+            <th>值</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td><p title="HTML5 &lt;fieldset&gt; disabled 属性">disabled</p></td>
+            <td>disabled</td>
+            <td>规定应该禁用 fieldset。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML5 &lt;fieldset&gt; form 属性">form</p></td>
+            <td><i>form_id</i></td>
+            <td>规定 fieldset 所属的一个或多个表单。</td>
+          </tr>
+          <tr>
+            <td><p title="HTML5 &lt;fieldset&gt; name 属性">name</p></td>
+            <td><i>value</i></td>
+            <td>规定 fieldset 的名称。</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">legend属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th>属性</th>
+            <th>值</th>
+            <th>描述</th>
+            <th>DTD</th>
+          </tr>
+          <tr>
+            <td><p title="">align</p></td>
+            <td><ul>
+                <li>top</li>
+                <li>bottom</li>
+                <li>left</li>
+                <li>right</li>
+              </ul></td>
+            <td><p><span class="deprecated">不赞成使用。</span>请使用样式代替。</p>
+              <p>为 fieldset 中的标题定义对齐方式。</p></td>
+            <td>TF</td>
+          </tr>
+        </table>
+        <h2 style="color: blueviolet">datalist属性</h2>
+        <p>datalist 标签支持 HTML 中的事件属性。</p>
+        <h2 style="color: blueviolet">output属性</h2>
+        <table class="dataintable" border="1">
+          <tr>
+            <th style="width:20%;">属性</th>
+            <th>值</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;output&gt; 标签的 for 属性">for</p></td>
+            <td><i>element_id</i></td>
+            <td>定义输出域相关的一个或多个元素。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;output&gt; 标签的 form 属性">form</p></td>
+            <td><i>form_id</i></td>
+            <td>定义输入字段所属的一个或多个表单。</td>
+          </tr>
+          <tr>
+            <td class="html5_new"><p title="HTML &lt;output&gt; 标签的 name 属性">name</p></td>
+            <td><i>name</i></td>
+            <td>定义对象的唯一名称。（表单提交时使用）</td>
+          </tr>
+        </table>
+      </div>
+    </nav>
+  </aside>
+</div>
+<div align="center" style="font:italic;color:cyan"> <a href="formuser.html">
+  <h2>实例展示</h2>
+  </a> </div>
+<br />
+<br />
+<br />
+<h3 align="center" style="color:deeppink">传送门-常用网址 </h3>
+<h5 align="center" style="color:chartreuse;font: small-caps">常用网站： </h5>
+<div id="a1" style="margin-left: 20px;" align="center"> <a href="https://www.baidu.com/?tn=62095104_19_oem_dg" style="font:italic;color:cyan" target="_blank">百度一下</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.mgzxzs.com/sytool/se.htm" style="font:italic;color:cyan" target="_blank">RGB颜色对照表 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.huya.com/" style="font:italic;color:cyan" target="_blank">虎牙直播-技术驱动娱乐-弹幕式互动直播平台 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.lanzou.com/" style="font:italic;color:cyan" target="_blank">蓝奏云网盘 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.dell.com/support/home/zh-cn?c=cn&l=zh&s=gen&~ck=mn" style="font:italic;color:cyan" target="_blank">支持 | Dell 中国 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bilibili.com/" style="font:italic;color:cyan" target="_blank">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div id="a2" style="margin-left: 20px;" align="center"> <a href="https://pintia.cn/" style="font:italic;color:cyan" target="_blank">PTA|程序设计类实验辅助教学平台 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://cet-bm.neea.edu.cn/" style="font:italic;color:cyan" target="_blank">全国大学英语四、六级考试报名网 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.mosoteach.cn/web/index.php?c=passport&m=index" style="font:italic;color:cyan" target="_blank">云班课</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.qfnu.edu.cn/" style="font:italic;color:cyan" target="_blank">曲阜师范大学官网 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://zhtj.youth.cn/zhtj/signin" style="font:italic;color:cyan" target="_blank">网上共青团·智慧团建 </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">内部网站： </h5>
+<div id="a3" style="margin-left: 20px;" align="center"> <a href="WebStart.html" style="font:italic;color:cyan" target="_blank">WebStart.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS2.html" style="font:italic;color:cyan" target="_blank">WebS2.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS3.html" style="font:italic;color:cyan" target="_blank">WebS3.html </a> </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">网站书签： </h5>
+<div id="a4" style="margin-left: 20px;" align="center"> <a href="WebStart.html#head" style="color: aqua;background-size: auto;font-size: 20px" target="_blank">|-WebStart.html顶部-|</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebStart.html#tail" style="color: aqua;background-size: auto;font-size: 20px" target="_blank">|-WebStart.html底部-|</a> </div>
+<hr color="aqua">
+<div id="footer" align="center">
+  <p id="p1" style="color: aqua"> 本网站提供的内容仅用于观赏和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有qfnu2019417019，保留一切权利。 </p>
+</div>
+</body>
+</html>

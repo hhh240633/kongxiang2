@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>form_user</title>
+</head>
+
+<body bgcolor="#606060">
+<form id="formid" method="post" accept-charset="UTF-8">
+<fieldset id="field1" form="formid">
+  <legend>只能输入汉字</legend>
+  <input type="text" pattern="/[^\u4E00-\u9FA5]/g">
+</fieldset>
+<fieldset id="field2" form="formid">
+  <legend>只能输入英文字母和数字</legend>
+  <input type="text" pattern="/[^\da-zA-Z]/ig">
+</fieldset>
+<fieldset id="field3" form="formid">
+  <legend>文本区域</legend>
+  <textarea id="textarea" style="width: 500px;height: 200px"></textarea>
+</fieldset>
+<fieldset id="field4" form="formid">
+  <legend>按钮</legend>
+  <input type="button" onclick="Dialog()" value="点击显示对话框" />
+  <input type="button" onclick="Que()" value="点击显示确认框" />
+  <input type="button" onclick="Ti()" value="点击显示提示框" />
+</fieldset>
+<fieldset id="field5" form="formid">
+  <legend>下拉列表</legend>
+  <label>省市自治区：</label>
+  <select id="select" title="省市自治区" style="width: 150px">
+    <option value="北京">北京</option>
+    <option value="天津">天津</option>
+    <option value="上海">上海</option>
+    <option value="河北省">河北省</option>
+    <option value="山西省">山西省</option>
+    <option value="辽宁省">辽宁省</option>
+    <option value="吉林省">吉林省</option>
+    <option value="黑龙江省">黑龙江省</option>
+    <option value="江苏省">江苏省</option>
+    <option value="浙江省">浙江省</option>
+    <option value="安徽省">安徽省</option>
+    <option value="福建省">福建省</option>
+    <option value="江西省">江西省</option>
+    <option value="山东省" selected="selected">山东省</option>
+    <option value="河南省">河南省</option>
+    <option value="湖北省">湖北省</option>
+    <option value="湖南省">湖南省</option>
+    <option value="广东省">广东省</option>
+    <option value="海南省">海南省</option>
+    <option value="四川省">四川省</option>
+    <option value="贵州省">贵州省</option>
+    <option value="云南省">云南省</option>
+    <option value="陕西省">陕西省</option>
+    <option value="甘肃省">甘肃省</option>
+    <option value="青海省">青海省</option>
+    <option value="台湾省">台湾省</option>
+    <option value="内蒙古自治区">内蒙古自治区</option>
+    <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+    <option value="西藏自治区">西藏自治区</option>
+    <option value="宁夏回族自治区">宁夏回族自治区</option>
+    <option value="广西壮族自治区">广西壮族自治区</option>
+    <option value="香港">香港</option>
+    <option value="澳门">澳门</option>
+    <option value="被禁用" disabled="disabled">被禁用</option>
+  </select>
+</fieldset>
+<fieldset id="field6" form="formid">
+  <legend>optgroup</legend>
+  <select>
+    <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+</fieldset>
+<fieldset id="field7" form="formid">
+  <legend>label</legend>
+  <input type="checkbox" id="basketball">
+  <label for="basketball">篮球</label>
+  <input type="checkbox" id="football">
+  <label for="football">足球</label>
+  <input type="checkbox" id="tableTennis">
+  <label for="tableTennis">乒乓球</label>
+  <br />
+  <input type="submit" value="提交"/>
+  <label for="football" form="formid">足球</label>
+</fieldset>
+<fieldset id="field8">
+  <legend>datalist</legend>
+  <input list="cars" />
+  <datalist id="cars" >
+    <option value="BMW">BMW</option>
+    <option value="Ford">Ford</option>
+    <option value="Volvo">Volvo</option>
+  </datalist>
+</fieldset>
+<fieldset id="field9">
+<legend>output</legend>
+<form action="" id="myform" oninput="num.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" id="num1">+
+        <input type="number" id="num2">=
+        <output name="num" for="num1 num2"></output>            
+    </form>
+</fieldset>
+</form>
+<script type="text/javascript">
+    function Dialog()
+        {
+            alert("这是一个对话框！")
+        }
+        function Que()
+        {
+            var se=confirm("请选择点击一个按钮！");
+            if(se==true)
+                {
+                    alert("你按下的是 确认 ！");
+                }
+            else
+                {
+                    alert("你按下的是取消！");
+                }
+        }
+        function Ti()
+        {
+            var t=prompt("请输入您的名字","King视界")
+            if(t!=null&&t!="")
+                {
+                    alert("精彩MV就在，" + t + "！属于你的世界！")
+                }
+        }
+    </script>
+</body>
+</html>
