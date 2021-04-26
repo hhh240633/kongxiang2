@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - CSS</title>
+</head>
+
+<body>
+<div align="center">
+  <article>
+    <header>
+      <h2 style="font:italic;color: crimson">HTML5 - CSS </h2>
+    </header>
+  </article>
+  <aside>
+    <nav>
+      <h3 style="font:italic;color:#F3F">CSS-简介</h3>
+      <p style="font:italic;color:cyan"><em>CSS</em> 指的是层叠样式表* (<em>C</em>ascading <em>S</em>tyle <em>S</em>heets)</p>
+      <p style="font:italic;color:cyan">CSS 描述了<em>如何在屏幕、纸张或其他媒体上显示 HTML 元素</em></p>
+      <p style="font:italic;color:cyan">CSS <em>节省了大量工作</em>。它可以同时控制多张网页的布局</p>
+      <pre style="font:italic;color:cyan">
+外部样式表存储在 <em>CSS 文件</em>中</pre>
+    </nav>
+  </aside>
+</div>
+<div align="center" style="font:italic;color: cyan">
+  <h3 style="font:italic;color:#F3F">CSS-语法</h3>
+  <pre id="line1">CSS 规则集（rule-set）由选择器和声明块组成：</pre>
+  <img class="illustration" src="https://www.w3school.com.cn/i/css/selector.gif" alt="CSS 选择器" />
+  <pre id="line2"> 选择器指向您需要设置样式的 HTML 元素。
+  </pre>
+  <p style="font:italic;color:cyan">声明块包含一条或多条用分号分隔的声明。</p>
+  <p style="font:italic;color:cyan">每条声明都包含一个 CSS 属性名称和一个值，以冒号分隔。</p>
+  <p style="font:italic;color:cyan">多条 CSS 声明用分号分隔，声明块用花括号括起来。</p>
+  <h3>实例:</h3>
+  <p>在此例中，所有 &lt;p&gt; 元素都将居中对齐，并带有红色文本颜色：</p>
+  <div align="left" style="border-left-width:500px">
+    <pre>
+p {
+  color: red;
+  text-align: center;
+}
+</pre>
+  </div>
+  <p style="font:italic;color:cyan">例子解释：</p>
+  <p style="font:italic;color:cyan">p 是 CSS 中的<em>选择器</em>（它指向要设置样式的 HTML 元素：&lt;p&gt;）。</p>
+  <p style="font:italic;color:cyan">color 是属性，red 是属性值</p>
+  <p style="font:italic;color:cyan">text-align 是属性，center 是属性值</p>
+</div>
+<div align="center" style="font:italic;color: cyan">
+  <h3 style="font:italic;color:#F3F">CSS-选择器</h3>
+  <p>CSS 选择器用于&ldquo;查找&rdquo;（或选取）要设置样式的 HTML 元素。</p>
+  <p>简单选择器</p>
+  <p>组合器选择器</p>
+  <p>伪类选择器</p>
+  <p>伪元素选择器</p>
+  <p>属性选择器</p>
+  <table border="1">
+    <tr>
+      <th>选择器</th>
+      <th>例子</th>
+      <th>例子描述</th>
+    </tr>
+    <tr>
+      <td>.<i>class</i></td>
+      <td>.intro</td>
+      <td>选取所有 class=&quot;intro&quot; 的元素。</td>
+    </tr>
+    <tr>
+      <td>#<i>id</i></td>
+      <td>#firstname</td>
+      <td>选取 id=&quot;firstname&quot; 的那个元素。</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>*</td>
+      <td>选取所有元素。</td>
+    </tr>
+    <tr>
+      <td><i>element</i></td>
+      <td>p</td>
+      <td>选取所有 &lt;p&gt; 元素。</td>
+    </tr>
+    <tr>
+      <td><i>element</i>,<i>element</i>,..</td>
+      <td>div, p</td>
+      <td>选取所有 &lt;div&gt; 元素和所有 &lt;p&gt; 元素。</td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+  <aside>
+    <nav>
+      <h3 style="font:italic;color:#F3F">CSS-使用</h3>
+      <p style="font:italic;color:cyan">1.外部 CSS:</p>
+      <p style="font:italic;color:cyan">每张 HTML 页面必须在 head 部分的 &lt;link&gt; 元素内包含对外部样式表文件的引用。</p>
+      <div align="left" style="font:italic;color:cyan;border-left-width:500px">
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+      <p style="font:italic;color:cyan">"mystyle.css" 是这样的：</p>
+      <div align="left" style="font:italic;color:cyan;border-left-width:500px">
+        <pre>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+</pre>
+      </div>
+      <p style="font:italic;color:cyan">2.内部 CSS:</p>
+      <p style="font:italic;color:cyan">内部样式在 HTML 页面的 &lt;head&gt; 部分内的 &lt;style&gt; 元素中进行定义：</p>
+      <div align="left" style="font:italic;color:cyan;border-left-width:500px">
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+      <p style="font:italic;color:cyan">3.行内 CSS:</p>
+      <p style="font:italic;color:cyan">行内样式在相关元素的 &quot;style&quot; 属性中定义：</p>
+      <div align="left" style="font:italic;color:cyan;border-left-width:500px">
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;
+&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+    </nav>
+  </aside>
+</div>
+<br />
+<br />
+<br />
+<h3 align="center" style="color:deeppink">传送门-常用网址 </h3>
+<h5 align="center" style="color:chartreuse;font: small-caps">常用网站： </h5>
+<div id="a1" style="margin-left: 20px;" align="center"> <a href="https://www.baidu.com/?tn=62095104_19_oem_dg" style="font:italic;color:cyan" target="_blank">百度一下</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.mgzxzs.com/sytool/se.htm" style="font:italic;color:cyan" target="_blank">RGB颜色对照表 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.huya.com/" style="font:italic;color:cyan" target="_blank">虎牙直播-技术驱动娱乐-弹幕式互动直播平台 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.lanzou.com/" style="font:italic;color:cyan" target="_blank">蓝奏云网盘 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.dell.com/support/home/zh-cn?c=cn&l=zh&s=gen&~ck=mn" style="font:italic;color:cyan" target="_blank">支持 | Dell 中国 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bilibili.com/" style="font:italic;color:cyan" target="_blank">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div id="a2" style="margin-left: 20px;" align="center"> <a href="https://pintia.cn/" style="font:italic;color:cyan" target="_blank">PTA|程序设计类实验辅助教学平台 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://cet-bm.neea.edu.cn/" style="font:italic;color:cyan" target="_blank">全国大学英语四、六级考试报名网 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.mosoteach.cn/web/index.php?c=passport&m=index" style="font:italic;color:cyan" target="_blank">云班课</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.qfnu.edu.cn/" style="font:italic;color:cyan" target="_blank">曲阜师范大学官网 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://zhtj.youth.cn/zhtj/signin" style="font:italic;color:cyan" target="_blank">网上共青团·智慧团建 </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">内部网站： </h5>
+<div id="a3" style="margin-left: 20px;" align="center"> <a href="WebStart.html" style="font:italic;color:cyan" target="_blank">WebStart.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS2.html" style="font:italic;color:cyan" target="_blank">WebS2.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS3.html" style="font:italic;color:cyan" target="_blank">WebS3.html </a> </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">网站书签： </h5>
+<div id="a4" style="margin-left: 20px;" align="center"> <a href="WebStart.html#head" style="color: aqua;background-size: auto;font-size: 20px" target="_blank">|-WebStart.html顶部-|</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebStart.html#tail" style="color: aqua;background-size: auto;font-size: 20px" target="_blank">|-WebStart.html底部-|</a> </div>
+<hr color="aqua">
+<div id="footer" align="center">
+  <p id="p1" style="color: aqua"> 本网站提供的内容仅用于观赏和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有qfnu2019417019，保留一切权利。 </p>
+</div>
+</body>
+</html>
