@@ -6,6 +6,25 @@
 <!--网站图标-->
 <link rel="icon" href="https://i.loli.net/2021/03/25/lmTegpt3YhxkRaO.jpg" />
 <link rel="stylesheet" type="text/css" href="sameline.css">
+	    <script>
+function Message()
+{
+	var userName = document.getElementById("account-name").value;
+	var pwd = document.getElementById("user-pwd").value;
+    if(userName==""||pwd=="")
+    {
+        alert("用户名或密码为空！");
+    }
+	else if(userName=="admin"&&pwd=="123456")
+	{
+		location.href ="https://hhh240633.github.io/kongxiang2/index.html";
+	}
+	else
+	{
+		alert("用户名或密码错误！");
+	}
+}
+</script>
 </head>
 
 <body>
@@ -56,23 +75,5 @@
     <div class="forget-pwd-box" align="center"> <a href="tishi.html">注册Web啦账号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="tishi.html">其他方式登录</a> </div>
   </form>
 </div>
-    <script>
-
-function Message()
-{
-	varuserName=document.getElementById("account-name").value;
-	varpwd=document.getElementById("user-pwd").value;
-	if(userName=="admin"&&pwd=="123456")
-	{
-	alert("Run Successful!");
-	location.href ="https://qfnu2019417019.gitee.io/kongxiang2/index.html";
-	}
-	else
-	{
-	alert("Wrong Password!");
-	}
-}
-
-</script>
 </body>
 </html>
