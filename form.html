@@ -57,25 +57,22 @@
   </form>
 </div>
     <script>
-$('#login-button-1').click(
-function(event)
+
+function Message()
 {
 	varuserName=document.getElementById("account-name").value;
 	varpwd=document.getElementById("user-pwd").value;
 	if(userName=="admin"&&pwd=="123456")
 	{
-		event.preventDefault();
-		setTimeout(function()
-		{
-			location.href ="https://qfnu2019417019.gitee.io/kongxiang2/index.html";
-		},2000);
+	alert("Run Successful!");
+	location.href ="https://qfnu2019417019.gitee.io/kongxiang2/index.html";
 	}
 	else
 	{
-		alert("Wrong Password");
+	alert("Wrong Password!");
 	}
 }
-);
+
 </script>
 </body>
 </html>
