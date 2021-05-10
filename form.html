@@ -56,29 +56,26 @@
     <div class="forget-pwd-box" align="center"> <a href="tishi.html">注册Web啦账号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="tishi.html">其他方式登录</a> </div>
   </form>
 </div>
-<script type="text/javascript" language="javascript">
-function Message()
+    <script>
+$('#login-button-1').click(
+function(event)
 {
-<!--获取用户名和密码  -->
-var x=document.getElementById("account-name").value;
-var y=document.getElementById("user-pwd").value;
-if(x==""||y=="")
-{
-alert("用户名或密码不能为空！")
-return;
+	varuserName=document.getElementById("account-name").value;
+	varpwd=document.getElementById("user-pwd").value;
+	if(userName=="admin"&&pwd=="123456")
+	{
+		event.preventDefault();
+		setTimeout(function()
+		{
+			location.href ="https://qfnu2019417019.gitee.io/kongxiang2/index.html";
+		},2000);
+	}
+	else
+	{
+		alert("Wrong Password");
+	}
 }
-else if(x=="1001"||y=="1001"){ <!--与js设置的用户名和密码进行匹配  -->
-<!--密码匹配后跳转-->
-location.href="index.html";
-return; 
-<!--匹配后进行跳转的页面，你自行编写，注意相对路径的书写 -->
-}
-else{
-alert("用户名或密码错误!");
-return;
-}
-}
-
-    </script>
+);
+</script>
 </body>
 </html>
