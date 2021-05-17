@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: blueviolet;
+	font-family: "宋体";
+	text-align: left;
+	font-size: 25px;
+	color:aliceblue;
+}
+label{
+	font-family: "黑体";
+	font-size: 25px;
+	color: aqua;
+}
+.preclass{
+	text-align: left;
+	color:aliceblue;
+	font-size: 25px;
+	
+}
+#labelid{
+	text-align: justify;/*justify*/
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";/*字体：gill sans*/
+	color: yellow;/*颜色：黄色*/
+}
+.labelclass{
+	text-align: center;/*居中*/
+	font-family: "楷体";/*字体：楷体*/
+	color: aqua;/*颜色：亮蓝色*/
+}
+.pclass{
+	font-family: "华文琥珀";
+	font-size: 35px;
+	text-align: center;
+	color: aqua;
+}
+.labelclass2{
+	font-family: "华文彩云";
+	font-size: 30px;
+	color:violet;
+}
+.divclass{
+	font-family: "仿宋";
+	color:aqua;
+	font-size: 33px;
+}
+div label{
+	font-family: "楷体";
+	color:aqua;
+	font-size: 30px;
+}
+div > label{
+	font-family: "隶书";
+	font-size: 40px;
+	color: aliceblue;
+}
+div > p{
+	font-family: "隶书";
+	font-size: 40px;
+	color: aliceblue;
+}
+div label{
+	font-family: "楷体";
+	color:aqua;
+	font-size: 30px;
+}
+label:first-child{
+	font-size: 45px;
+	color: red;
+	font-family: "方正舒体";
+}
+

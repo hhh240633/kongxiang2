@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  background-color: blueviolet;
+}
+.dai {
+  color: aliceblue;
+  text-align: left;
+  font-size: 35px;
+}
+/*简单属性选择器*/
+[title] {
+  color: cornsilk;
+  font-size: 20px;
+  text-align: center;
+}
+[draggable] {
+  color: black;
+  font-size: 25px;
+  text-align: left;
+}
+/*分组选择器*/
+.pclass, .preclass {
+  font-family: "宋体";
+  text-align: center;
+  font-size: 30px;
+  color: aqua;
+}
+#h2label, #h2label2 {
+  font-family: "黑体";
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.preclass {
+  background-color: chartreuse;
+  color: white;
+}
+.tip {
+  color: red;
+  font-family: "楷体";
+  font-size: 20px;
+  text-align: center;
+}
+/*伪类选择器*/
+/* unvisited link */
+a:link {
+  color: aqua;
+}
+/* visited link */
+a:visited {
+  color: white;
+}
+/* mouse over link */
+a:hover {
+  color: deeppink;
+}
+/* selected link */
+a:active {
+  color: red;
+}
+/*伪元素对象选择器*/
+p::first-letter { /* 选择第一个字 */
+  color: red;
+  font-size: 25px;
+}
+p::first-line { /* 选择第一行 */
+  color: white;
+  font-size: 20px;
+}
+p::selection { /*  选中变色 */
+  color: yellow;
+  background-color: aliceblue;
+}

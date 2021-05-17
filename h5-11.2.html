@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - CSS-2</title>
+<link rel="stylesheet" type="text/css" href="h5-11.2.css">
+</head>
+
+<body>
+<article>
+  <header>
+    <h2 style="font:italic;color: crimson" id="h2label">HTML5 - CSS-2 </h2>
+  </header>
+</article>
+<h3 class="dai">组合选择器：如下代码，示例为下方对应字体。
+  <pre class="dai">.pclass, .preclass {
+  font-family: "宋体";
+  text-align: center;
+  font-size: 30px;
+  color: aqua;
+}
+#h2label, #h2label2 {
+  font-family: "黑体";
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}</pre>
+</h3>
+<h3 class="dai">属性选择器：如下代码，示例为下方对应字体。
+  <pre class="dai">[title]{
+    color:cornsilk;
+    font-size: 20px;
+    text-align: center;
+}
+[draggable]{
+    color: black;
+    font-size: 25px;
+    text-align: left;
+}
+</pre>
+</h3>
+<h3 class="dai">伪类选择器：如下代码，示例为下方对应超链接。
+  <pre class="dai">/* unvisited link */
+a:link {
+  color: aqua;
+}
+/* visited link */
+a:visited {
+  color: white;
+}
+/* mouse over link */
+a:hover {
+  color: deeppink;
+}
+/* selected link */
+a:active {
+  color: red;
+}
+</pre>
+</h3>
+<h3 class="dai">伪元素(对象)选择器：如下代码，示例为下方对应字体。
+  <pre class="dai">p::first-letter { /* 选择第一个字 */
+  color: red;
+  font-size: 25px;
+}
+p::first-line { /* 选择第一行 */
+  color:white;
+  font-size: 20px;
+}
+p::selection { /*  选中变色 */
+  color:yellow;
+  background-color: aliceblue;
+}
+</pre>
+</h3>
+<h2 id="h2label2">示例：</h2>
+<p class="pclass">假设希望 h2 元素和段落都有灰色。为达到这个目的，最容易的做法是使用以下声明：</p>
+<pre class="preclass">h2, p {color:gray;}</pre>
+<p class="pclass">将 h2 和 p 选择器放在规则左边，然后用逗号分隔，就定义了一个规则。其右边的样式（color:gray;）将应用到这两个选择器所引用的元素。逗号告诉浏览器，规则中包含两个不同的选择器。如果没有这个逗号，那么规则的含义将完全不同。参见后代选择器。</p>
+<p class="pclass">可以将任意多个选择器分组在一起，对此没有任何限制。</p>
+<p class="pclass">例如，如果您想把很多元素显示为灰色，可以使用类似如下的规则：</p>
+<pre class="preclass">body, h2, p, table, th, td, pre, strong, em {color:gray;}</pre>
+<p class="tip"><span>提示：</span>通过分组，创作者可以将某些类型的样式“压缩”在一起，这样就可以得到更简洁的样式表。</p>
+<p class="pclass">以下的两组规则能得到同样的结果，不过可以很清楚地看出哪一个写起来更容易：</p>
+<pre class="preclass">
+<span>/* no grouping */</span>
+h1 {color:blue;}
+h2 {color:blue;}
+h3 {color:blue;}
+h4 {color:blue;}
+h5 {color:blue;}
+h6 {color:blue;}
+
+<span>/* grouping */</span>
+h1, h2, h3, h4, h5, h6 {color:blue;}
+</pre>
+<p draggable="auto">如果希望选择有某个属性的元素，而不论属性值是什么，可以使用简单属性选择器。</p>
+<h3>例子 1</h3>
+<p draggable="auto">如果您希望把包含标题（title）的所有元素变为红色，可以写作：</p>
+<pre title="pre">*[title] {color:red;}</pre>
+<h3>例子 2</h3>
+<p draggable="auto">与上面类似，可以只对有 href 属性的锚（a 元素）应用样式：</p>
+<pre title="pre">a[href] {color:red;}</pre>
+<h3>例子 3</h3>
+<p draggable="auto">还可以根据多个属性进行选择，只需将属性选择器链接在一起即可。</p>
+<p draggable="auto">例如，为了将同时有 href 和 title 属性的 HTML 超链接的文本设置为红色，可以这样写：</p>
+<pre title="pre">a[href][title] {color:red;}</pre>
+<h3>例子 4</h3>
+<p draggable="auto">可以采用一些创造性的方法使用这个特性。</p>
+<p draggable="auto">例如，可以对所有带有 alt 属性的图像应用样式，从而突出显示这些有效的图像：</p>
+<pre title="pre">img[alt] {border: 5px solid red;}</pre>
+<br />
+<br />
+<br />
+<h3 align="center" style="color:deeppink">传送门-常用网址 </h3>
+<h5 align="center" style="color:chartreuse;font: small-caps">常用网站： </h5>
+<div id="a1" style="margin-left: 20px;" align="center"> <a href="https://www.baidu.com/?tn=62095104_19_oem_dg" target="_blank">百度一下</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.mgzxzs.com/sytool/se.htm" target="_blank">RGB颜色对照表 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.huya.com/" target="_blank">虎牙直播-技术驱动娱乐-弹幕式互动直播平台 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.lanzou.com/" target="_blank">蓝奏云网盘 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.dell.com/support/home/zh-cn?c=cn&l=zh&s=gen&~ck=mn" target="_blank">支持 | Dell 中国 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div id="a2" style="margin-left: 20px;" align="center"> <a href="https://pintia.cn/" target="_blank">PTA|程序设计类实验辅助教学平台 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://cet-bm.neea.edu.cn/" target="_blank">全国大学英语四、六级考试报名网 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.mosoteach.cn/web/index.php?c=passport&m=index" target="_blank">云班课</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.qfnu.edu.cn/" target="_blank">曲阜师范大学官网 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://zhtj.youth.cn/zhtj/signin" target="_blank">网上共青团·智慧团建 </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">内部网站： </h5>
+<div id="a3" style="margin-left: 20px;" align="center"> <a href="WebStart.html" target="_blank">WebStart.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS2.html" target="_blank">WebS2.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS3.html" target="_blank">WebS3.html </a> </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">网站书签： </h5>
+<div id="a4" style="margin-left: 20px;" align="center"> <a href="WebStart.html#head" target="_blank">|-WebStart.html顶部-|</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebStart.html#tail" target="_blank">|-WebStart.html底部-|</a> </div>
+<hr color="aqua">
+<div id="footer" align="center">
+  <p id="p1" style="color: aqua"> 本网站提供的内容仅用于观赏和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有qfnu2019417019，保留一切权利。 </p>
+</div>
+</body>
+</html>

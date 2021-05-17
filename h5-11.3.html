@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - CSS-3</title>
+<link rel="stylesheet" type="text/css" href="h5-11.3.css">
+</head>
+
+<body>
+<p class="pclass" id="pid" title="ptitle">HTML5 - CSS-3</p>
+<fieldset id="field1">
+  <legend>id选择器、类选择器</legend>
+  <label id="labelid" class="labelclass">Mid Autumn Day is an autumn festive in China.It comes in September or October.On that day,families eat a big dinner, they also eat mooncakes somesmall round cakes with nuts meat or eggs in them.</label>
+  <pre>
+		<div class="preclass">
+#labelid{
+	text-align: justify;/*justify*/
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";/*字体：gill sans*/
+	color: yellow;/*颜色：黄色*/
+}
+.labelclass{
+	text-align: center;/*居中*/
+	font-family: "楷体";/*字体：楷体*/
+	color: aqua;/*颜色：亮蓝色*/
+}
+</div>
+</pre>
+  <p style="color: red">结论：ID选择器&nbsp;(优先级)&nbsp;&gt;&nbsp;类选择器。</p>
+</fieldset>	
+<fieldset id="field2">
+  <legend>类选择器、标签选择器</legend>
+  <label class="labelclass2">伤划心，泪染梦，聚雨相思追忆景，望秋风短云，看心声醉痕，是来往无言，还是回首难追忆，看一份泪雨的画面，而布局的味道是多么的诱惑，而伤城的凄凉发出温暖而有情的碎骨，断了的真，感了的梦，还有多少相思能有缘，还有多少泪水换来份的相聚。</label>
+  <pre>
+		<div class="preclass">
+.labelclass2{
+	font-family: "华文彩云";
+	font-size: 30px;
+	color:violet;
+}
+label{
+	font-family: "黑体";
+	font-size: 25px;
+	color: aqua;
+}
+</div>
+</pre>
+  <p style="color: red">结论：类选择器&nbsp;(优先级)&nbsp;&gt;&nbsp;标签选择器。</p>
+</fieldset>
+	
+	
+<fieldset id="field3">
+  <legend>标签选择器、子选择器</legend>
+	<p>带类选择器：</p>
+  <div><label class="divclass">I like reading,so I love many different kinds of books very much,because they not only broaden my horizons but also give me inspiration.</label></div><br />
+	<p>不带类选择器：</p>
+	<div><label>I like reading,so I love many different kinds of books very much,because they not only broaden my horizons but also give me inspiration.</label></div>
+  <pre>
+		<div class="preclass">
+div &gt; label{
+	font-family: "隶书";
+	font-size: 40px;
+	color: aliceblue;
+}
+label{
+	font-family: "黑体";
+	font-size: 25px;
+	color: aqua;
+}
+.divclass{
+	font-family: "仿宋";
+	color:aqua;
+	font-size: 33px;
+}
+</div>
+</pre>
+  <p style="color: red">结论：类选择器&nbsp;(优先级)&nbsp;&gt;&nbsp;子选择器&nbsp;(优先级)&nbsp;&gt;&nbsp;标签选择器。</p>
+</fieldset>		
+	
+	<fieldset id="field4">
+  <legend>子选择器、后代选择器</legend>
+	<div><label>走在伤痛中，落寞地呆在原地，望着你隐去的方向，木然凄凄，许久，许久……</label></div>
+  <pre>
+		<div class="preclass">
+div &gt; label{
+	font-family: "隶书";
+	font-size: 40px;
+	color: aliceblue;
+}
+div label{
+	font-family: "楷体";
+	color:aqua;
+	font-size: 30px;
+}
+</div>
+</pre>
+  <p style="color: red">结论：子选择器&nbsp;(优先级)&nbsp;&gt;&nbsp;后代选择器。</p>
+</fieldset>	
+	<fieldset id="field5">
+  <legend>后代选择器、伪类选择器</legend>
+	<div><label>My Life Story described her hard struggle to become an outstanding writer and educationist of the world.</label></div>
+  <pre>
+		<div class="preclass">
+div label{
+	font-family: "楷体";
+	color:aqua;
+	font-size: 30px;
+}
+label:first-child{
+	font-size: 45px;
+	color: red;
+	font-family: "方正舒体";
+}
+</div>
+</pre>
+  <p style="color: red">结论：伪选择器&nbsp;(优先级)&nbsp;&gt;&nbsp;标签选择器。</p>
+</fieldset>			
+<fieldset id="field6">
+  <legend>body属性对照字体</legend>
+  <p>或许在经年之后，喝着一杯相思的酒，迷茫在离别的渡口，不知度过了多少春秋，可这场美丽的邂逅，却始终魂牵梦绕在心头。</p>
+  <pre>
+		<div class="preclass">
+body{
+	background-color: blueviolet;
+	font-family: "楷体";
+	text-align: left;
+	font-size: 25px;
+	color:aliceblue;
+}		</div>
+</pre>
+</fieldset>
+<fieldset id="field7">
+  <legend>总结</legend>
+  <p>ID&gt;类&gt;伪类&gt;子&gt;后代&gt;标签</p>
+</fieldset>
+</body>
+</html>
