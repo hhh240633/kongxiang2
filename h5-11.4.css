@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+.print {
+    color: aqua;
+    font-family: "楷体";
+    font-size: 30px;
+}
+.print-1 {
+    color: red;
+    font-family: "华文琥珀";
+    font-size: 25px;
+}
+.div-1 {
+    background-color: blueviolet;
+    width: 300px;
+    border: 15px solid aqua;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 10px 10px 5px #888888;
+}
+.dotted {
+    outline-style: dotted;
+    font-size: 20px;
+    color: blue;
+}
+.dashed {
+    outline-style: dashed;
+    font-size: 20px;
+    color: blue;
+}
+.solid {
+    outline-style: solid;
+    font-size: 20px;
+    color: blue;
+}
+.double {
+    outline-style: double;
+    font-size: 20px;
+    color: blue;
+}
+.groove {
+    outline-style: groove;
+    font-size: 20px;
+    color: blue;
+	outline-color: yellow;
+}
+.ridge {
+    outline-style: ridge;
+    font-size: 20px;
+    color:blue;
+	outline-color: yellow;
+}
+.inset {
+    outline-style: inset;
+    font-size: 20px;
+    color: blue;
+	outline-color: yellow;
+}
+.outset {
+    outline-style: outset;
+    font-size: 20px;
+    color: blue;
+	outline-color: yellow;
+}
+.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+
+.ex2 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: medium;
+}
+
+.ex3 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thick;
+}
+
+.ex4 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 4px;
+}
+.ex5 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: red;
+}
+
+.ex6 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: blue;
+}
+
+.ex7 {
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
+a {
+    text-decoration: none
+}
+a:link {
+    color: aqua;
+}
+/* visited link */
+a:visited {
+    color: white;
+}
+/* mouse over link */
+a:hover {
+    color: deeppink;
+}
+/* selected link */
+a:active {
+    color: red;
+}

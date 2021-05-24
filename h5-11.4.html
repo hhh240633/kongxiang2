@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - CSS-4</title>
+<link rel="icon" href="https://i.loli.net/2021/03/25/IEesgPn8c6LVpJv.jpg" />
+<link rel="stylesheet" type="text/css" href="h5-11.4.css">
+<style type="text/css">
+a {
+    text-decoration: none
+}
+a:link {
+    color: aqua;
+}
+/* visited link */
+a:visited {
+    color: white;
+}
+/* mouse over link */
+a:hover {
+    color: deeppink;
+}
+/* selected link */
+a:active {
+    color: red;
+}
+</style>
+</head>
+
+<body>
+<p style="color: burlywood;font-size: 20px">背景<br />
+  音乐：
+<audio id="music" controls="controls" autoplay="autoplay" loop="true" controlsList="nodownload" οncοntextmenu="return false">
+  <source src="https://dev8apk.baidupan.com/052415bb/2021/05/24/e3ec498fde689c5b4f16559b65411f1c.mp3?st=zeZGBOypk9E6EKpXJzw-dw&e=1621843627&b=VUQKYlAxWC9UbQA_aAzYOKgV9XiJWAFQ3UiFcFVI6UT0JfFwoBydYCVBkU2kKMQQgARVbaVAoBG8GOgl2VzUALFVqCnpQYw_c_c&fi=44419788&pid=223-104-187-40&up=2" type="audio/mp3">
+</audio>
+</p>
+<h1 align="center" style="color: red">HTML5 - CSS-4</h1>
+<h1 style="color:deeppink">CSS盒模型</h1>
+<li class="print">简单模型实现代码如下：</li>
+<pre class="print">
+.div-1 {
+    background-color:blueviolet;
+    width: 300px;
+    border: 15px solid aqua;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+	box-shadow: 10px 10px 5px #888888;
+}
+</pre>
+<p class="print-1">CSS 盒模型（框模型）实质上是一个包装每个 HTML 元素的盒子。它包括：边框、内边距（填充）、外边距以及实际的内容。</p>
+<p class="print">结果如下：</p>
+<div class="div-1"><a href="index.html" target="_blank"><img style="width: 280px;height: 280px" src="https://i.loli.net/2021/03/25/UNsGAgPIQyaLCzY.jpg" alt="" /></a></div>
+<li class="print">outline-style 属性</li>
+<p class="dotted">点状轮廓</p>
+<p class="dashed">虚线轮廓</p>
+<p class="solid">实线轮廓</p>
+<p class="double">双线轮廓</p>
+<p class="groove">凹槽轮廓。效果取决于 outline-color 值。</p>
+<p class="ridge">凸脊轮廓。效果取决于 outline-color 值。</p>
+<p class="inset">凹边轮廓。效果取决于 outline-color 值。</p>
+<p class="outset">凸边轮廓。效果取决于 outline-color 值。</p>
+<li class="print">outline-width 属性</li>
+<p class="ex1">细的轮廓。</p>
+<p class="ex2">中等的轮廓。</p>
+<p class="ex3">粗的轮廓。</p>
+<p class="ex4">4 像素的粗轮廓。</p>
+<li class="print">outline-color 属性</li>
+<p class="ex5">红色的实线轮廓。</p>
+<p class="ex6">蓝色的点状轮廓。</p>
+<p class="ex7">灰色的实线轮廓。</p>
+<br />
+<br />
+<br />
+<h3 align="center" style="color:deeppink">传送门-常用网址 </h3>
+<h5 align="center" style="color:chartreuse;font: small-caps">常用网站： </h5>
+<div id="a1" style="margin-left: 20px;" align="center"> <a href="https://www.baidu.com/?tn=62095104_19_oem_dg" target="_blank">百度一下</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.mgzxzs.com/sytool/se.htm" target="_blank">RGB颜色对照表 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.huya.com/" target="_blank">虎牙直播-技术驱动娱乐-弹幕式互动直播平台 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.lanzou.com/" target="_blank">蓝奏云网盘 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.dell.com/support/home/zh-cn?c=cn&l=zh&s=gen&~ck=mn" target="_blank">支持 | Dell 中国 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div id="a2" style="margin-left: 20px;" align="center"> <a href="https://pintia.cn/" target="_blank">PTA|程序设计类实验辅助教学平台 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://cet-bm.neea.edu.cn/" target="_blank">全国大学英语四、六级考试报名网 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.mosoteach.cn/web/index.php?c=passport&m=index" target="_blank">云班课</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.qfnu.edu.cn/" target="_blank">曲阜师范大学官网 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://zhtj.youth.cn/zhtj/signin" target="_blank">网上共青团·智慧团建 </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">内部网站： </h5>
+<div id="a3" style="margin-left: 20px;" align="center"> <a href="WebStart.html" target="_blank">WebStart.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS2.html" target="_blank">WebS2.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS3.html" target="_blank">WebS3.html </a> </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">网站书签： </h5>
+<div id="a4" style="margin-left: 20px;" align="center"> <a href="WebStart.html#head" target="_blank">|-WebStart.html顶部-|</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebStart.html#tail" target="_blank">|-WebStart.html底部-|</a> </div>
+<hr color="aqua">
+<div id="footer" align="center">
+  <p id="p1" style="color: aqua"> 本网站提供的内容仅用于观赏和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有qfnu2019417019，保留一切权利。 </p>
+</div>
+</body>
+</html>
