@@ -1,329 +1,269 @@
-
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<!--网站图标-->
-	<link rel="icon" href="https://i.loli.net/2021/03/25/IEesgPn8c6LVpJv.jpg" />
-	<title>旧版网站</title>
+<meta charset="utf-8">
+<!--网站图标-->
+<link rel="icon" href="https://i.loli.net/2021/03/25/IEesgPn8c6LVpJv.jpg" />
+<title>旧版网站</title>
+<style type="text/css">
+a {
+    text-decoration: none
+}
+a:link {
+    color: aqua;
+}
+/* visited link */
+a:visited {
+    color: white;
+}
+/* mouse over link */
+a:hover {
+    color: deeppink;
+}
+/* selected link */
+a:active {
+    color: red;
+}
+</style>
 </head>
 <!--背景图片-->
 <body background="https://i.loli.net/2021/03/25/3BuZvEeYU9H7TFM.jpg" style="background-size: auto 2000px">
-	<article>
-		<header>
-		<!--背景音乐-->
-            <a id="head"></a>
-			<p style="color: burlywood;font-size: 20px">背景<br />音乐：
-				<audio id="music" controls="controls" autoplay="autoplay" loop="true" controlsList="nodownload" οncοntextmenu="return false">
-  					<source src="https://vip-down.kkyhq.cn:88/G.E.M.%E9%82%93%E7%B4%AB%E6%A3%8B-%E5%85%89%E5%B9%B4%E4%B9%8B%E5%A4%96.mp3?p=20210329/b0ce86424a6700e14c8acbc4ebd9e692&t=1619426503&f=G.E.M.%E9%82%93%E7%B4%AB%E6%A3%8B-%E5%85%89%E5%B9%B4%E4%B9%8B%E5%A4%96.mp3&k=fb50b56cca32b295181ce0d93791aeb8d73080d5" type="audio/mp3">
-				</audio>
-			</p>
-                <a href="#tail" style="color: deeppink;background-size: auto;font-size: 20px">|-至底部-|</a>
-			<h1 align="center" style="color:deeppink;font-size: 40px">Web实验3知识汇总
-			</h1>
-			<!--1-->
-			<h2 align="left" style="font:italic;color: crimson">1、HTML5 - 新特性
-			</h2>
-		</header>
-	</article>
-	<aside>
-		<nav>
-			<h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;HTML5 的一些最有趣的新特性：
-			</h3>
-			<ul>
-				<li>
-					<p style="font:italic;color:cyan">新的语义元素，比如 header, footer, article,section；
-					</p>
-		  		</li>
-				<li>
-					<p style="font:italic;color:cyan">新的表单控件，比如数字、日期、时间、日历和滑块；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">强大的图像支持（借由 canvas 和 svg）；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">强大的多媒体支持（借由 video 和 audio）；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">强大的新 API，比如用本地存储取代 cookie。
-					</p>
-				</li>
-			</ul>
-	  	</nav>
-	</aside>
-	<article>
-		<header>
-	  		<h2 align="left" style="font:italic;color: crimson">2、HTML5 - 新增的语义化标记元素
-			</h2>
-	  	</header>
-	</article>
-	<aside>
-		<nav>
-			<h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;元素及其说明：
-			</h3>
-			<ul>
-				<li>
-					<p style="font:italic;color:cyan">header：页面或页面中某一个区块的页眉，一般为导航信息；
-					</p>
-		  		</li>
-				<li>
-					<p style="font:italic;color:cyan">footer：页面或页面中某一个区块的页脚；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">section：页面中的一块区域，通常由内容和标题组成；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">article：独立的内容块，可独立于页面其他内容适用；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">aside：非正文内容，独立于页面的主要内容；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">nav：作为页面导航的辅助内容。
-					</p>
-				</li>
-			</ul>
-	  	</nav>
-	</aside>
-	<article>
-		<header>
-			<h2 align="left" style="font:italic;color: crimson">3、HTML5 - 新增的功能元素
-			</h2>
-		</header>
-	</article>
-	<aside>
-		<nav>
-			<h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;元素及其说明：
-			</h3>
-			<ul>
-				<li>
-					<p style="font:italic;color:cyan">hgroup：用于对整个页面或页面中一个内容区块的标题进行组合；
-					</p>
-		  		</li>
-				<li>
-					<p style="font:italic;color:cyan">video：定义视频，例如电影片段或其他视频流；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">audio：定义音频，例如音乐或其他音频流；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">output：表示不同类型的输出，例如脚本的输出；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">keygen：表示生成密钥；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">等等...（详见课本第6页）
-					</p>
-				</li>
-			</ul>
-  		</nav>
-	</aside>
-	<article>
-		<header>
-			<h2 align="left" style="font:italic;color: crimson">4、HTML5 - 被删元素
-			</h2>
-		</header>
-	</article>
-	<aside>
-		<nav>
-			<h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;以下 HTML 4.01 元素已从 HTML5 中删除：</h3>
-			<ul>
-				<li>
-					<p style="font:italic;color:cyan">acronym；
-					</p>
-		  		</li>
-				<li>
-					<p style="font:italic;color:cyan">applet；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">basefont；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">big；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">center；
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">dir
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">font
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">frame
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">frameset
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">noframes
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">strike
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">tt
-					</p>
-				</li>
-			</ul>
-  		</nav>
-	</aside>
-	<article>
-		<header>
-			<h2 align="left" style="font:italic;color: crimson">5、HTML5 - 浏览器支持
-			</h2>
-		</header>
-	</article>
-	<aside>
-		<nav>
-			<ul>
-				<li>
-					<p style="font:italic;color:cyan">所有现代浏览器都支持 HTML5。
-					</p>
-		  		</li>
-				<li>
-					<p style="font:italic;color:cyan">此外，所有浏览器，不论新旧，都会自动把未识别元素当做行内元素来处理。
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">正因如此，您可以帮助老式浏览器处理”未知的“ HTML 元素。
-					</p>
-				</li>
-				<li>
-					<p style="font:italic;color:cyan">注释：您甚至可以教授石器时代的 IE6 如何处理未知的 HTML 元素。
-					</p>
-				</li>
-			</ul>
-  		</nav>
-	</aside>	
-	<h1 align="center" style="color:deeppink;font-size: 40px">流行音乐MV
-	</h1>
-	<h2 style="font:italic;color:crimson">1.《起风了》-林俊杰
-	</h2>
-	<div align="center">
-		<video id="video01" width="300" height="600" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
-  			<source src="https://vip-down.kkyhq.cn:88/%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BC%94%E5%94%B1%E4%BC%9A.mp4?p=20210327/821afc04c00558712c27dd0c947f56a3&t=1616813113&f=%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BC%94%E5%94%B1%E4%BC%9A.mp4&k=fd4d83cf6c3d372f826871cf4cd96abae5f70370" type="video/mp4" />
-		</video>
-		<video id="video02" width="300" height="600" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
-  			<source src="https://vip-down.kkyhq.cn:88/%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BC%94%E5%94%B1%E4%BC%9A%E9%AB%98%E5%85%89%E7%BB%8F%E5%85%B8%E6%97%B6%E5%88%BB.mp4?p=20210327/7d8388a485defe5da1e87ca0eb48709c&t=1616813376&f=%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BC%94%E5%94%B1%E4%BC%9A%E9%AB%98%E5%85%89%E7%BB%8F%E5%85%B8%E6%97%B6%E5%88%BB.mp4&k=70d98c229a9c87032d2cfd9e28b7ad8d24e28964" type="video/mp4" />
-		</video>
-		<video id="video03" width="300" height="600" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
-  			<source src="https://vip-down.kkyhq.cn:88/%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89%E8%B5%B7%E9%A3%8E%E4%BA%86-%E6%9E%97%E4%BF%8A%E6%9D%B0.mp4?p=20210327/662071879e50590b3925c4be7a6f195f&t=1616813078&f=%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89%E8%B5%B7%E9%A3%8E%E4%BA%86-%E6%9E%97%E4%BF%8A%E6%9D%B0.mp4&k=723cbee96483a9f6515a8d1c827eaf92a2fe4c83" type="video/mp4" />
-		</video>
-	</div>	
-	<h2 style="font:italic;color:crimson">2.《无人之岛》-任然
-	</h2>	
-	<div align="center">
-		<video id="video04" width="1200" height="750" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
-  			<source src="https://vip-down.kkyhq.cn:88/%E4%BB%BB%E7%84%B6%E8%BF%99%E9%A6%96%E3%80%8A%E6%97%A0%E4%BA%BA%E4%B9%8B%E5%B2%9B%E3%80%8B.mp4?p=20210327/933ca38a090b511ebd39baaf0a7319e1&t=1616813287&f=%E4%BB%BB%E7%84%B6%E8%BF%99%E9%A6%96%E3%80%8A%E6%97%A0%E4%BA%BA%E4%B9%8B%E5%B2%9B%E3%80%8B.mp4&k=db791093af3107356830c9a19ff8b930a454ad3b" type="video/mp4" />
-		</video>
-	</div>
-	<h2 style="font:italic;color:crimson">3.《你的答案》-阿冗
-	</h2>	
-	<div align="center">
-		<video id="video05" width="1200" height="750" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
-  			<source src="https://vip-down.kkyhq.cn:88/%E9%98%BF%E5%86%97+-+%E4%BD%A0%E7%9A%84%E7%AD%94%E6%A1%88.mp4?p=20210327/e34f39458aa60ec3a918cf779dc07299&t=1616813319&f=%E9%98%BF%E5%86%97+-+%E4%BD%A0%E7%9A%84%E7%AD%94%E6%A1%88.mp4&k=ffd1e3722d8fabdc82fe9c97375636314c2de2f2" type="video/mp4" />
-		</video>
-	</div>
-	<h2 style="font:italic;color:crimson">4.《辞九门回忆》-等什么君
-	</h2>	
-	<div align="center">
-		<video id="video06" width="1200" height="750" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
-  			<source src="https://vip-down.kkyhq.cn:88/%E8%BE%9E%E4%B9%9D%E9%97%A8%E5%9B%9E%E5%BF%86-%E9%AB%98%E6%B8%85480P.mp4?p=20210327/fc6aba30d79d63ffec0aaed501aa6a11&t=1616813304&f=%E8%BE%9E%E4%B9%9D%E9%97%A8%E5%9B%9E%E5%BF%86-%E9%AB%98%E6%B8%85480P.mp4&k=93147f6e433cb6d606a24b6c8e0fdcea3eb0260b" type="video/mp4" />
-		</video>
-	</div>	
-	<h1 align="center" style="color:deeppink;font-size: 40px">Human Fall Flat/人类一败涂地专区
-	</h1>
-	<h2 align="left" style="font:italic;color: crimson">1、空巷广告牌展示：
-	</h2>
-	<div align="center">
-    	<img src="https://i.loli.net/2021/03/25/PZ4cEnUq3yRoANI.jpg" width="1200" height="700"  title="空巷广告牌" alt=""/>
-	</div>
-	<div align="center">
-		<img src="https://i.loli.net/2021/03/25/mp9vrHB78oMh6Pi.jpg" width="1200" height="700"  title="双人正面广告牌" alt=""/>
-	</div>
-	<div align="center">
-		<img src="https://i.loli.net/2021/03/25/QmBt7WwAGlRLox3.jpg" width="1200" height="700"  title="双人背面广告牌" alt=""/>
-	</div>
-	<h2 align="left" style="font:italic;color: crimson">2、空巷个人视频展示
-	</h2>
-	<h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;修改：小人身体阻力
-	</h3>
-	<div align="center">
-		<video id="video07" width="1200" height="700" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
-  			<source src="https://vip-down.kkyhq.cn:88/%E5%B0%8F%E4%BA%BA%E8%BA%AB%E4%BD%93%E9%98%BB%E5%8A%9B.mp4?p=20210327/5d847ed126e0769ce189e527c8be7dd2&t=1616813150&f=%E5%B0%8F%E4%BA%BA%E8%BA%AB%E4%BD%93%E9%98%BB%E5%8A%9B.mp4&k=1b2454897e53820ce8234308cf6b4ecfaa26645b" type="video/mp4" />
-		</video>
-	</div>
-	<h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;修改：指定重生指令版
-	</h3>
-	<div align="center">
-		<video id="video08" width="1200" height="700" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
-  			<source src="https://vip-down.kkyhq.cn:88/%E6%8C%87%E5%AE%9A%E9%87%8D%E7%94%9F%E6%8C%87%E4%BB%A4%E7%89%88.mp4?p=20210327/69b03e0997802bcfadfa6c1e456819c8&t=1616813173&f=%E6%8C%87%E5%AE%9A%E9%87%8D%E7%94%9F%E6%8C%87%E4%BB%A4%E7%89%88.mp4&k=7c0c99309cb62a2651d8763b66aab6174771a18f" type="video/mp4" />
-		</video>
-	</div>
-	<h1 align="center" style="color:deeppink;font-size: 40px">传送门-常用网址
-	</h1>
-    <h4 style="color:chartreuse;font: small-caps;font-size: 30px">常用网站：
-    </h4>
-    <div id="a1" style="margin-left: 20px;" align="center">
-			<a href="https://www.baidu.com/?tn=62095104_19_oem_dg" style="font:italic;color:cyan" target="_blank">百度一下</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://www.mgzxzs.com/sytool/se.htm" style="font:italic;color:cyan" target="_blank">RGB颜色对照表
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.huya.com/" style="font:italic;color:cyan" target="_blank">虎牙直播-技术驱动娱乐-弹幕式互动直播平台
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
-            <a href="https://www.lanzou.com/" style="font:italic;color:cyan" target="_blank">蓝奏云网盘
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.dell.com/support/home/zh-cn?c=cn&l=zh&s=gen&~ck=mn" style="font:italic;color:cyan" target="_blank">支持 | Dell 中国
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.bilibili.com/" style="font:italic;color:cyan" target="_blank">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
-    <div id="a2" style="margin-left: 20px;" align="center">
-            <a href="https://pintia.cn/" style="font:italic;color:cyan" target="_blank">PTA|程序设计类实验辅助教学平台
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://cet-bm.neea.edu.cn/" style="font:italic;color:cyan" target="_blank">全国大学英语四、六级考试报名网
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
-            <a href="https://www.mosoteach.cn/web/index.php?c=passport&m=index" style="font:italic;color:cyan" target="_blank">云班课</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.qfnu.edu.cn/" style="font:italic;color:cyan" target="_blank">曲阜师范大学官网
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://zhtj.youth.cn/zhtj/signin" style="font:italic;color:cyan" target="_blank">网上共青团·智慧团建
-			</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
-    <a href="#head" style="color: deeppink;background-size: auto;font-size: 20px">|-至顶部-|</a>
+<article>
+  <header> 
+    <!--背景音乐--> 
+    <a id="head"></a>
+    <p style="color: burlywood;font-size: 20px">背景<br />
+      音乐：
+    <audio id="music" controls="controls" autoplay="autoplay" loop="true" controlsList="nodownload" οncοntextmenu="return false">
+      <source src="https://dev8apk.baidupan.com/052415bb/2021/05/24/e3ec498fde689c5b4f16559b65411f1c.mp3?st=zeZGBOypk9E6EKpXJzw-dw&e=1621843627&b=VUQKYlAxWC9UbQA_aAzYOKgV9XiJWAFQ3UiFcFVI6UT0JfFwoBydYCVBkU2kKMQQgARVbaVAoBG8GOgl2VzUALFVqCnpQYw_c_c&fi=44419788&pid=223-104-187-40&up=2" type="audio/mp3">
+    </audio>
+    </p>
+    <a href="#tail" style="color: deeppink;background-size: auto;font-size: 20px">|-至底部-|</a>
+    <h1 align="center" style="color:deeppink;font-size: 40px">Web实验3知识汇总 </h1>
+    <!--1-->
+    <h2 align="left" style="font:italic;color: crimson">1、HTML5 - 新特性 </h2>
+  </header>
+</article>
+<aside>
+  <nav>
+    <h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;HTML5 的一些最有趣的新特性： </h3>
+    <ul>
+      <li>
+        <p style="font:italic;color:cyan">新的语义元素，比如 header, footer, article,section； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">新的表单控件，比如数字、日期、时间、日历和滑块； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">强大的图像支持（借由 canvas 和 svg）； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">强大的多媒体支持（借由 video 和 audio）； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">强大的新 API，比如用本地存储取代 cookie。 </p>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<article>
+  <header>
+    <h2 align="left" style="font:italic;color: crimson">2、HTML5 - 新增的语义化标记元素 </h2>
+  </header>
+</article>
+<aside>
+  <nav>
+    <h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;元素及其说明： </h3>
+    <ul>
+      <li>
+        <p style="font:italic;color:cyan">header：页面或页面中某一个区块的页眉，一般为导航信息； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">footer：页面或页面中某一个区块的页脚； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">section：页面中的一块区域，通常由内容和标题组成； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">article：独立的内容块，可独立于页面其他内容适用； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">aside：非正文内容，独立于页面的主要内容； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">nav：作为页面导航的辅助内容。 </p>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<article>
+  <header>
+    <h2 align="left" style="font:italic;color: crimson">3、HTML5 - 新增的功能元素 </h2>
+  </header>
+</article>
+<aside>
+  <nav>
+    <h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;元素及其说明： </h3>
+    <ul>
+      <li>
+        <p style="font:italic;color:cyan">hgroup：用于对整个页面或页面中一个内容区块的标题进行组合； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">video：定义视频，例如电影片段或其他视频流； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">audio：定义音频，例如音乐或其他音频流； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">output：表示不同类型的输出，例如脚本的输出； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">keygen：表示生成密钥； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">等等...（详见课本第6页） </p>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<article>
+  <header>
+    <h2 align="left" style="font:italic;color: crimson">4、HTML5 - 被删元素 </h2>
+  </header>
+</article>
+<aside>
+  <nav>
+    <h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;以下 HTML 4.01 元素已从 HTML5 中删除：</h3>
+    <ul>
+      <li>
+        <p style="font:italic;color:cyan">acronym； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">applet； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">basefont； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">big； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">center； </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">dir </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">font </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">frame </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">frameset </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">noframes </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">strike </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">tt </p>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<article>
+  <header>
+    <h2 align="left" style="font:italic;color: crimson">5、HTML5 - 浏览器支持 </h2>
+  </header>
+</article>
+<aside>
+  <nav>
+    <ul>
+      <li>
+        <p style="font:italic;color:cyan">所有现代浏览器都支持 HTML5。 </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">此外，所有浏览器，不论新旧，都会自动把未识别元素当做行内元素来处理。 </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">正因如此，您可以帮助老式浏览器处理”未知的“ HTML 元素。 </p>
+      </li>
+      <li>
+        <p style="font:italic;color:cyan">注释：您甚至可以教授石器时代的 IE6 如何处理未知的 HTML 元素。 </p>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<h1 align="center" style="color:deeppink;font-size: 40px">流行音乐MV </h1>
+<h2 style="font:italic;color:crimson">1.《起风了》-林俊杰 </h2>
+<div align="center">
+  <video id="video01" width="300" height="600" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://vip-down.kkyhq.cn:88/%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BC%94%E5%94%B1%E4%BC%9A.mp4?p=20210327/821afc04c00558712c27dd0c947f56a3&t=1616813113&f=%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BC%94%E5%94%B1%E4%BC%9A.mp4&k=fd4d83cf6c3d372f826871cf4cd96abae5f70370" type="video/mp4" />
+  </video>
+  <video id="video02" width="300" height="600" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://vip-down.kkyhq.cn:88/%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BC%94%E5%94%B1%E4%BC%9A%E9%AB%98%E5%85%89%E7%BB%8F%E5%85%B8%E6%97%B6%E5%88%BB.mp4?p=20210327/7d8388a485defe5da1e87ca0eb48709c&t=1616813376&f=%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BC%94%E5%94%B1%E4%BC%9A%E9%AB%98%E5%85%89%E7%BB%8F%E5%85%B8%E6%97%B6%E5%88%BB.mp4&k=70d98c229a9c87032d2cfd9e28b7ad8d24e28964" type="video/mp4" />
+  </video>
+  <video id="video03" width="300" height="600" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://vip-down.kkyhq.cn:88/%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89%E8%B5%B7%E9%A3%8E%E4%BA%86-%E6%9E%97%E4%BF%8A%E6%9D%B0.mp4?p=20210327/662071879e50590b3925c4be7a6f195f&t=1616813078&f=%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89%E8%B5%B7%E9%A3%8E%E4%BA%86-%E6%9E%97%E4%BF%8A%E6%9D%B0.mp4&k=723cbee96483a9f6515a8d1c827eaf92a2fe4c83" type="video/mp4" />
+  </video>
+</div>
+<h2 style="font:italic;color:crimson">2.《无人之岛》-任然 </h2>
+<div align="center">
+  <video id="video04" width="1200" height="750" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://vip-down.kkyhq.cn:88/%E4%BB%BB%E7%84%B6%E8%BF%99%E9%A6%96%E3%80%8A%E6%97%A0%E4%BA%BA%E4%B9%8B%E5%B2%9B%E3%80%8B.mp4?p=20210327/933ca38a090b511ebd39baaf0a7319e1&t=1616813287&f=%E4%BB%BB%E7%84%B6%E8%BF%99%E9%A6%96%E3%80%8A%E6%97%A0%E4%BA%BA%E4%B9%8B%E5%B2%9B%E3%80%8B.mp4&k=db791093af3107356830c9a19ff8b930a454ad3b" type="video/mp4" />
+  </video>
+</div>
+<h2 style="font:italic;color:crimson">3.《你的答案》-阿冗 </h2>
+<div align="center">
+  <video id="video05" width="1200" height="750" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://vip-down.kkyhq.cn:88/%E9%98%BF%E5%86%97+-+%E4%BD%A0%E7%9A%84%E7%AD%94%E6%A1%88.mp4?p=20210327/e34f39458aa60ec3a918cf779dc07299&t=1616813319&f=%E9%98%BF%E5%86%97+-+%E4%BD%A0%E7%9A%84%E7%AD%94%E6%A1%88.mp4&k=ffd1e3722d8fabdc82fe9c97375636314c2de2f2" type="video/mp4" />
+  </video>
+</div>
+<h2 style="font:italic;color:crimson">4.《辞九门回忆》-等什么君 </h2>
+<div align="center">
+  <video id="video06" width="1200" height="750" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://vip-down.kkyhq.cn:88/%E8%BE%9E%E4%B9%9D%E9%97%A8%E5%9B%9E%E5%BF%86-%E9%AB%98%E6%B8%85480P.mp4?p=20210327/fc6aba30d79d63ffec0aaed501aa6a11&t=1616813304&f=%E8%BE%9E%E4%B9%9D%E9%97%A8%E5%9B%9E%E5%BF%86-%E9%AB%98%E6%B8%85480P.mp4&k=93147f6e433cb6d606a24b6c8e0fdcea3eb0260b" type="video/mp4" />
+  </video>
+</div>
+<h1 align="center" style="color:deeppink;font-size: 40px">Human Fall Flat/人类一败涂地专区 </h1>
+<h2 align="left" style="font:italic;color: crimson">1、空巷广告牌展示： </h2>
+<div align="center"> <img src="https://i.loli.net/2021/03/25/PZ4cEnUq3yRoANI.jpg" width="1200" height="700"  title="空巷广告牌" alt=""/> </div>
+<div align="center"> <img src="https://i.loli.net/2021/03/25/mp9vrHB78oMh6Pi.jpg" width="1200" height="700"  title="双人正面广告牌" alt=""/> </div>
+<div align="center"> <img src="https://i.loli.net/2021/03/25/QmBt7WwAGlRLox3.jpg" width="1200" height="700"  title="双人背面广告牌" alt=""/> </div>
+<h2 align="left" style="font:italic;color: crimson">2、空巷个人视频展示 </h2>
+<h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;修改：小人身体阻力 </h3>
+<div align="center">
+  <video id="video07" width="1200" height="700" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://vip-down.kkyhq.cn:88/%E5%B0%8F%E4%BA%BA%E8%BA%AB%E4%BD%93%E9%98%BB%E5%8A%9B.mp4?p=20210327/5d847ed126e0769ce189e527c8be7dd2&t=1616813150&f=%E5%B0%8F%E4%BA%BA%E8%BA%AB%E4%BD%93%E9%98%BB%E5%8A%9B.mp4&k=1b2454897e53820ce8234308cf6b4ecfaa26645b" type="video/mp4" />
+  </video>
+</div>
+<h3 style="font:italic;color:fuchsia">&nbsp;&nbsp;&nbsp;&nbsp;修改：指定重生指令版 </h3>
+<div align="center">
+  <video id="video08" width="1200" height="700" controls="controls" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://vip-down.kkyhq.cn:88/%E6%8C%87%E5%AE%9A%E9%87%8D%E7%94%9F%E6%8C%87%E4%BB%A4%E7%89%88.mp4?p=20210327/69b03e0997802bcfadfa6c1e456819c8&t=1616813173&f=%E6%8C%87%E5%AE%9A%E9%87%8D%E7%94%9F%E6%8C%87%E4%BB%A4%E7%89%88.mp4&k=7c0c99309cb62a2651d8763b66aab6174771a18f" type="video/mp4" />
+  </video>
+</div>
+<h3 align="center" style="color:deeppink">传送门-常用网址 </h3>
+<h5 align="center" style="color:chartreuse;font: small-caps">常用网站： </h5>
+<div id="a1" style="margin-left: 20px;" align="center"> <a href="https://www.baidu.com/?tn=62095104_19_oem_dg" target="_blank">百度一下</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.mgzxzs.com/sytool/se.htm" target="_blank">RGB颜色对照表 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.huya.com/" target="_blank">虎牙直播-技术驱动娱乐-弹幕式互动直播平台 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.lanzou.com/" target="_blank">蓝奏云网盘 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.dell.com/support/home/zh-cn?c=cn&l=zh&s=gen&~ck=mn" target="_blank">支持 | Dell 中国 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div id="a2" style="margin-left: 20px;" align="center"> <a href="https://pintia.cn/" target="_blank">PTA|程序设计类实验辅助教学平台 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://cet-bm.neea.edu.cn/" target="_blank">全国大学英语四、六级考试报名网 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.mosoteach.cn/web/index.php?c=passport&m=index" target="_blank">云班课</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.qfnu.edu.cn/" target="_blank">曲阜师范大学官网 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://zhtj.youth.cn/zhtj/signin" target="_blank">网上共青团·智慧团建 </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">内部网站： </h5>
+<div id="a3" style="margin-left: 20px;" align="center"> <a href="WebStart.html" target="_blank">WebStart.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS2.html" target="_blank">WebS2.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS3.html" target="_blank">WebS3.html </a> </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">网站书签： </h5>
+<div id="a4" style="margin-left: 20px;" align="center"> <a href="WebStart.html#head" target="_blank">|-WebStart.html顶部-|</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebStart.html#tail" target="_blank">|-WebStart.html底部-|</a> </div>
 <hr color="aqua">
-<a id="tail"></a>
 <div id="footer" align="center">
-<p id="p1" style="color: aqua">
-本网站提供的内容仅用于观赏和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有qfnu2019417019，保留一切权利。
-</p>
+  <p id="p1" style="color: aqua"> 本网站提供的内容仅用于观赏和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有qfnu2019417019，保留一切权利。 </p>
 </div>
 </body>
-         <!-- 设置背景音乐音量为0.2，即正常音量的20% -->
-    <!-- html5-video标签屏蔽右键视频另存为的js代码 --> 
-	<script type="text/javascript">
+<!-- 设置背景音乐音量为0.2，即正常音量的20% -->
+<!-- html5-video标签屏蔽右键视频另存为的js代码 -->
+<script type="text/javascript">
     var audio=document.getElementById("audio");
 					audio.play();
         myVid=document.getElementById("music");
