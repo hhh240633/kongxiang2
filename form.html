@@ -9,10 +9,10 @@
 </head>
 
 <body>
-<p style="color:aqua;font-size: 20px">背景<br />
+    <p style="color: burlywood;font-size: 20px">背景<br />
       音乐：
     <audio id="music" controls="controls" autoplay="autoplay" loop="true" controlsList="nodownload" οncοntextmenu="return false">
-      <source src="https://vip-down.kkyhq.cn:88/G.E.M.%E9%82%93%E7%B4%AB%E6%A3%8B-%E5%85%89%E5%B9%B4%E4%B9%8B%E5%A4%96.mp3?p=20210329/b0ce86424a6700e14c8acbc4ebd9e692&t=1619426503&f=G.E.M.%E9%82%93%E7%B4%AB%E6%A3%8B-%E5%85%89%E5%B9%B4%E4%B9%8B%E5%A4%96.mp3&k=fb50b56cca32b295181ce0d93791aeb8d73080d5" type="audio/mp3">
+      <source src="https://dev8apk.baidupan.com/052415bb/2021/05/24/e3ec498fde689c5b4f16559b65411f1c.mp3?st=zeZGBOypk9E6EKpXJzw-dw&e=1621843627&b=VUQKYlAxWC9UbQA_aAzYOKgV9XiJWAFQ3UiFcFVI6UT0JfFwoBydYCVBkU2kKMQQgARVbaVAoBG8GOgl2VzUALFVqCnpQYw_c_c&fi=44419788&pid=223-104-187-40&up=2" type="audio/mp3">
     </audio>
     </p>
 <div id="sameline">
@@ -28,12 +28,12 @@
     <div align="center">
       <label class="user">账号</label>
       <br />
-      <input type="text" name="account_name" autocomplete="off"  placeholder="请输入邮箱／手机" id="account-name">
+      <input type="text" name="account_name" autocomplete="off"  placeholder="请输入邮箱／手机" id="account-name" required="required">
       <br />
       <br />
       <label class="password">密码</label>
       <br />
-      <input type="password" name="user_password" maxlength="16" autocomplete="off"  placeholder="请输入密码" id="user-pwd">
+      <input type="password" name="user_password" maxlength="16" autocomplete="off"  placeholder="请输入密码" id="user-pwd" required="required">
     </div>
     <br />
     <br />
@@ -41,7 +41,7 @@
       <div class="account-login-remember-me" data-type="account" data-value="N"> &nbsp;&nbsp;&nbsp;&nbsp;
         <input type="checkbox">
         <span style="vertical-align: middle;">记住密码</span> </div>
-      <a class="forget-password" href="tishi.html">忘记密码？&nbsp;&nbsp;&nbsp;&nbsp;</a> </div>
+      <a class="forget-password" href="/tishi.html">忘记密码？&nbsp;&nbsp;&nbsp;&nbsp;</a> </div>
     <br />
     <br />
     <div align="center">
@@ -53,27 +53,17 @@
     </div>
     <!-- 账号密码登录 end --> 
     <br />
-    <div class="forget-pwd-box" align="center"> <a href="tishi.html">注册Web啦账号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="tishi.html">其他方式登录</a> </div>
+    <div class="forget-pwd-box" align="center"> <a href="/tishi.html">注册Web啦账号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/tishi.html">其他方式登录</a> </div>
   </form>
 </div>
-<script>
-function Message()
-{
-	var userName = document.getElementById("account-name").value;
-	var pwd = document.getElementById("user-pwd").value;
-    if(userName==""||pwd=="")
-    {
-        alert("用户名或密码为空！");
-    }
-	else if(userName=="admin"&&pwd=="123456")
-	{
-		window.history.go("index.html");
-	}
-	else
-	{
-		alert("用户名或密码错误！");
-	}
-}
-</script>
+<script type="text/javascript" language="javascript">
+    var pass_name = document.getElementById("account-name").value.toLocaleLowerCase();
+    var pass_pwd = document.getElementById("user-pwd").value.toLocaleLowerCase();
+    function Message()
+        { 
+            alert("提示：登陆成功，请注意网站连接安全！正在跳转主站点......"); 
+            window.location.href="/index.html";
+        }
+    </script>
 </body>
 </html>
