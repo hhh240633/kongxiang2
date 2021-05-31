@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  background-color: #A2B5CD;
+}
+.daima-1 {
+  text-align: left;
+  background-color: aliceblue;
+  color: black;
+  width: 500px;
+  height: 250px;
+  font-size: 15px;
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+}
+.preleft {
+  text-align: left;
+  background-color: aliceblue;
+  color: black;
+  width: 500px;
+  height: 500px;
+  font-size: 15px;
+}
+.daima-2 {
+  text-align: left;
+  background-color: aliceblue;
+  color: black;
+  width: 500px;
+  height: 450px;
+  font-size: 15px;
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+}
+.daima-3 {
+  text-align: left;
+  background-color: aliceblue;
+  color: black;
+  width: 500px;
+  height: 400px;
+  font-size: 15px;
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+}
+.daima-4 {
+  text-align: left;
+  background-color: aliceblue;
+  color: black;
+  width: 500px;
+  height: 400px;
+  font-size: 15px;
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+}
+.center {
+  text-align: center;
+}
+/*1*/
+.table {
+  width: 50%;
+  height: 300px;
+  border-collapse: collapse;
+}
+.left {
+  background-color: red;
+}
+.right {
+  background-color: blue;
+}
+/*2*/
+.table1 {
+  display: table;
+  width: 800px;
+  height: 300px;
+  position: relative;
+  left: 50%;
+  margin-left: -400px;
+}
+.tb_row {
+  display: table-row;
+}
+.tb_cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.left1 {
+  background-color: red;
+}
+.right1 {
+  background-color: blue;
+}
+/*3*/
+.parent {
+  width: 800px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  left: 50%;
+  margin-left: -400px;
+}
+.left3 {
+  width: 400px;
+  height: 100%;
+  background: red;
+}
+.right3 {
+  flex: 1;
+  height: 100%;
+  background: blue;
+}
+/*4*/
+.parent2 {
+  width: 800px;
+  height: 200px;
+  position: relative;
+  left: 50%;
+  margin-left: -400px;
+}
+.left4 {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background-color: red;
+}
+.right4 {
+  height: 100%;
+  margin-left: 200px;
+  background-color: blue;
+}
+a {
+    text-decoration: none
+}
+a:link {
+    color: aqua;
+}
+/* visited link */
+a:visited {
+    color: white;
+}
+/* mouse over link */
+a:hover {
+    color: deeppink;
+}
+/* selected link */
+a:active {
+    color: red;
+}
