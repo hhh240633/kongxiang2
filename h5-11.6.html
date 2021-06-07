@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 - CSS-6</title>
+<!--网站图标-->
+<link rel="icon" href="https://i.loli.net/2021/03/25/lmTegpt3YhxkRaO.jpg" />
+<link rel="stylesheet" type="text/css" href="h5-11.6.css">
+</head>
+
+<body>
+<p style="color: burlywood;font-size: 20px">背景<br />
+  音乐：
+  <audio id="music" controls="controls" autoplay="autoplay" loop="true" controlsList="nodownload" οncοntextmenu="return false">
+    <source src="https://dev8apk.baidupan.com/052415bb/2021/05/24/e3ec498fde689c5b4f16559b65411f1c.mp3?st=zeZGBOypk9E6EKpXJzw-dw&e=1621843627&b=VUQKYlAxWC9UbQA_aAzYOKgV9XiJWAFQ3UiFcFVI6UT0JfFwoBydYCVBkU2kKMQQgARVbaVAoBG8GOgl2VzUALFVqCnpQYw_c_c&fi=44419788&pid=223-104-187-40&up=2" type="audio/mp3">
+  </audio>
+</p>
+<h1 class="center" style="color: red">HTML5 - CSS-6</h1>
+<br />
+<h2 align="center" style="color:#C3F">CSS3三列布局</h2>
+<br />
+<br />
+<h3>float布局</h3>
+<div class="float-left">
+  <h3>我是第一列！</h3>
+  <h4>代码如下:</h4>
+  <pre class="preclass">
+   .float-left {
+            width: 400px;
+            height: 300px;
+            background-color: red;
+            float: left;
+        }
+    </pre>
+</div>
+<div class="float-right">
+  <h3>我是第三列！</h3>
+  <h4>代码如下:</h4>
+  <pre class="preclass">
+   .float-right {
+            height: 300px;
+            background-color: yellow;
+            margin-left: 470px;
+            margin-right: 470px;
+        }
+    </pre>
+</div>
+<div class="float-center">
+  <h3>我是第二列！</h3>
+  <h4>代码如下:</h4>
+  <pre class="preclass">
+   .float-center{
+            width: 400px;
+            height: 300px;
+            background-color:#3F3;
+            float: right;
+        }
+    </pre>
+</div>
+<br />
+<br />
+<h2>position布局</h2>
+<div class="position-left">
+  <h3>我是第一列！</h3>
+  <h4>代码如下:</h4>
+  <pre class="preclass">
+.position-left{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    background-color: red;
+}
+    </pre>
+</div>
+<div class="position-center">
+  <h3>我是第二列！</h3>
+  <h4>代码如下:</h4>
+  <pre class="preclass">
+.position-center{
+    position: absolute;
+    left: 300px;
+    right: 300px;
+    background-color: blue;
+}
+    </pre>
+</div>
+<div class="position-right">
+  <h3>我是第三列！</h3>
+  <h4>代码如下:</h4>
+  <pre class="preclass">
+.position-right{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: #3A2CAC;
+}
+    </pre>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h3>table布局</h3>
+<article class="table-main">
+  <div class="table-left">
+    <h3>我是第一列！</h3>
+    <h4>代码如下:</h4>
+    <pre class="preclass">
+.table-left{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+    </pre>
+  </div>
+  <div class="table-center">
+    <h3>我是第二列！</h3>
+    <h4>代码如下:</h4>
+    <pre class="preclass">
+.table-center{
+	height: 200px;
+    background-color: blue;
+}
+    </pre>
+  </div>
+  <div class="table-right">
+    <h3>我是第三列！</h3>
+    <h4>代码如下:</h4>
+    <pre class="preclass">
+.table-right{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+    </pre>
+  </div>
+</article>
+<br />
+<br />
+<h3>flex布局</h3>
+<article class="flex-main">
+  <div class="flex-left">
+    <h3>我是第一列！</h3>
+    <h4>代码如下:</h4>
+    <pre class="preclass">
+.flex-left{
+    width: 30%;
+	height: 200px; 
+	margin-left: 0px;
+	background-color: red;
+}
+    </pre>
+  </div>
+  <div class="flex-center">
+    <h3>我是第二列！</h3>
+    <h4>代码如下:</h4>
+    <pre class="preclass">
+.flex-center{
+	width: 40%;
+	height: 200px;
+    background-color: blue;
+    word-break: break-word;
+}
+    </pre>
+  </div>
+  <div class="flex-right">
+    <h3>我是第三列！</h3>
+    <h4>代码如下:</h4>
+    <pre class="preclass">
+.flex-right{
+    width: 30%;
+	height: 200px;
+	margin-right: 0px;
+	background-color: red;
+}
+    </pre>
+  </div>
+</article>
+<br />
+<br />
+<br />
+<h3 align="center" style="color:deeppink">传送门-常用网址 </h3>
+<h5 align="center" style="color:chartreuse;font: small-caps">常用网站： </h5>
+<div id="a1" style="margin-left: 20px;" align="center"> <a href="https://www.baidu.com/?tn=62095104_19_oem_dg" target="_blank">百度一下</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.mgzxzs.com/sytool/se.htm" target="_blank">RGB颜色对照表 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.huya.com/" target="_blank">虎牙直播-技术驱动娱乐-弹幕式互动直播平台 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.lanzou.com/" target="_blank">蓝奏云网盘 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.dell.com/support/home/zh-cn?c=cn&l=zh&s=gen&~ck=mn" target="_blank">支持 | Dell 中国 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div id="a2" style="margin-left: 20px;" align="center"> <a href="https://pintia.cn/" target="_blank">PTA|程序设计类实验辅助教学平台 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://cet-bm.neea.edu.cn/" target="_blank">全国大学英语四、六级考试报名网 </a>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <a href="https://www.mosoteach.cn/web/index.php?c=passport&m=index" target="_blank">云班课</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.qfnu.edu.cn/" target="_blank">曲阜师范大学官网 </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://zhtj.youth.cn/zhtj/signin" target="_blank">网上共青团·智慧团建 </a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">内部网站： </h5>
+<div id="a3" style="margin-left: 20px;" align="center"> <a href="WebStart.html" target="_blank">WebStart.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS2.html" target="_blank">WebS2.html </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebS3.html" target="_blank">WebS3.html </a> </div>
+<h5 align="center" style="color:chartreuse;font: small-caps">网站书签： </h5>
+<div id="a4" style="margin-left: 20px;" align="center"> <a href="WebStart.html#head" target="_blank">|-WebStart.html顶部-|</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="WebStart.html#tail" target="_blank">|-WebStart.html底部-|</a> </div>
+<hr color="aqua">
+<div id="footer" align="center">
+  <p id="p1" style="color: aqua"> 本网站提供的内容仅用于观赏和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有qfnu2019417019，保留一切权利。 </p>
+</div>
+</body>
+</html>
